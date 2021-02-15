@@ -18,6 +18,7 @@ function PortFolio() {
         }
       })
       .catch(error => {
+        console.log(error)
         setMounted(false)
       });
     }, [])
