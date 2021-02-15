@@ -1,0 +1,78 @@
+{
+  "projects": [
+    {
+      "id": "wow",
+      "description" : "Wow Excursions es una empresa que su actividad principal es la venta de tours así que se desarrollo de un sistema de reservas , una web su versión responsiva quecuenta con su carrito de compra.",
+      "technologies" : [
+        "bootstrap",
+        "css",
+        "html",
+        "jquery",
+        "php"
+      ],
+      "title_bold" : "WOW",
+      "title_extra_light" : "Excursions",
+      "url" : "https://www.wowexcursions.com/"
+    },
+    {
+      "id": "playamia",
+      "description" : "Playamia es un parque de playa, atraves de diversas alianzas con cruceros recibe un gran flujo de visitantes por lo que cuenta una aplicación para gestionar los clientes por día, se desarrollo ademas una pagina web y un sistema de reservas.",
+      "technologies" : [
+        "bootstrap",
+        "css",
+        "html",
+        "jquery",
+        "php",
+        "ionic"
+      ],
+      "title_bold" : "Playa",
+      "title_extra_light" : "Mia",
+      "url" : "https://www.playamia.mx/"
+    },
+    {
+      "id": "trolley",
+      "description" : "The Cozumel Trolley Tour & Co. Ofrece un tour guiado por  todos los puntos mas importantes de la isla de Cozumel, cuenta con su sitio web y sistema de reservas.",
+      "technologies" : [
+        "css",
+        "html",
+        "php",
+        "laravel",
+        "react"
+      ],
+      "title_bold" : "The Cozumel Trolley",
+      "title_extra_light" : "Tour & Co.",
+      "url" : "https://www.cart.cozumeltrolleytour.com/"
+    },
+    {
+      "id": "wildtours",
+      "description" : "Wild tours brinda la experiencia de hacer actividades mas extremas como manejar una ATV en la jungla de isla de Cozumel, se desarrollo un aplicación para gestionar los vehículos, ademas de su sitio web y sistema de reservas.",
+      "technologies" : [
+        "bootstrap",
+        "css",
+        "html",
+        "jquery",
+        "react",
+        "php"
+      ],
+      "title_bold" : "Wild",
+      "title_extra_light" : "Tours",
+      "url" : "https://www.wildtours.com/"
+    },
+    {
+      "id": "mexicana",
+      "description" : "La mexicana es una casa de empeño, se desarrollo un sistema para gestionar los empeños y productos que se ingresan.",
+      "technologies" : [
+        "html",
+        "css",
+        "react",
+        "typescript",
+        "php",
+        "laravel"
+      ],
+      "title_bold" : "Casa de empeño",
+      "title_extra_light" : "la Mexicana",
+      "url" : "https://www.app.casadeempenolamexicana.com"
+    }
+  ]
+}
+
