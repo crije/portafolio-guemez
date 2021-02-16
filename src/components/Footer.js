@@ -3,13 +3,13 @@ import {footerGithub,footerMail,footerTwitter,footerFacebook,footerLinkedin} fro
 import {Link} from "react-router-dom";
 function Footer() {
   return (
-    <div className="bg-primary h-96 flex flex-col items-center justify-center">
+    <div id="footer-section" className="bg-primary h-96 flex flex-col items-center justify-center">
         <p  className="font-raleway text-base text-center font-light text-white pt-11 pb-16">¡Embarquémonos en nuevos proyectos juntos!</p>
-        <h2 className="font-raleway text-x35 text-white">
+        <h2 className="font-raleway text-x35 text-center text-white">
           <span className='font-bold'>Front End</span>
           <span className="font-extralight"> Developer</span>
         </h2>
-        <p className="font-roboto text-xl text-green pb-20">
+        <p className="font-roboto text-xl text-center text-green pb-20">
           <span className='font-thin text-center'>Cristhian</span>
           <span className="font-bold text-center"> Guemez</span>
           </p>

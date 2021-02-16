@@ -11,7 +11,7 @@ function AboutMe() {
     }, [])
   return (
     <>
-    <div className="h-heightHeaderAboutMe relative items-center justify-items-center justify-center flex flex-col bg-no-repeat bg-primary bg-about-me-header bg-right-top">
+    <div id="about" className="h-heightHeaderAboutMe relative items-center justify-items-center justify-center flex flex-col bg-no-repeat bg-primary bg-about-me-header bg-right-top">
     <ul id="header-social" className="absolute left-0 top-0 list-none h-7 flex flex-row place-items-center h-16 pl-32 md:pl-28">
         <li className="mr-3">
         <Link to={{ pathname: "https://github.com/crije" }} target="_blank" >
