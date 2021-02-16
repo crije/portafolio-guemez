@@ -1,16 +1,16 @@
-import {BrowserRouter as Router ,Route,Switch} from "react-router-dom";
+import {HashRouter as Router ,Route,Switch} from "react-router-dom";
 import {Home,AboutMe,PortFolio,NotFound} from "../src/pages";
 function App() {
   return (
     <Router>
      <Switch>
-      <Route exact path="/portfolio/">
+      <Route exact path="/">
         <Home/>
       </Route>
-      <Route exact path="/portfolio/about-me">
+      <Route exact path="/about-me">
         <AboutMe/>
       </Route>
-      <Route exact path="/portfolio/project/:company?">
+      <Route exact path="/project/:company?">
         <PortFolio/>
       </Route>
       <Route component={NotFound}/>

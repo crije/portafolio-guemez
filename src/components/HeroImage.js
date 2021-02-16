@@ -37,7 +37,7 @@ function HeroImage(props) {
             Mi portafolio
             </li>
             </Link>
-            <Link to={"/portfolio/about-me"}>
+            <Link to={"/about-me"}>
             <li className="mr-0 md:mr-14">
             Acerca de mi
             </li>
@@ -58,7 +58,7 @@ function HeroImage(props) {
             Mi portafolio
             </a>
             </li>
-            <Link to={"/portfolio/about-me"}>
+            <Link to={"/about-me"}>
             <li className="md:mr-14">
             Acerca de mi
             </li>

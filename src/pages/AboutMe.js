@@ -1,10 +1,11 @@
-import { useEffect,useState} from "react";
-import {ContactSocial,Footer} from "../components";
-import {headerGithub,headerMail,headerTwitter,headerFacebook,headerLikedin,aboutMe} from "../assets/images";
+import { useEffect,useState,useRef} from "react";
+import {Footer} from "../components";
+import {headerGithub,headerMail,headerTwitter,headerFacebook,headerLikedin,aboutMe,contactGithub,contactMail,contactTwitter,contactFacebook,contactLinkedin} from "../assets/images";
 import {Link} from "react-router-dom";
 
 function AboutMe() {
-   const [active, setActive] = useState("about-me")
+   const [active, setActive] = useState("about-me");
+   const contactRef = useRef();
    useEffect(() => {
       window.scrollTo(0, 0)
     }, [])
@@ -51,20 +52,19 @@ function AboutMe() {
     </div>
     <ul id="links-nav" className="absolute bottom-0 right-0 mb-6 list-none flex content-end justify-around h-14 items-center font-raleway font-bold text-base text-white">
     <li className="text-center md:text-inherit ml-8 md:ml-0 md:mr-6 ">
-    <Link to={{ pathname: "/portfolio" }} >
+    <Link to={{ pathname: "/" }} >
     Mi portafolio
     </Link>
     </li>
-    <li onClick={() => setActive("about-me")}  className={`text-center md:text-inherit mr-1 md:mr-6 ${active==="about-me" ? "text-green" : ""}`}>
-    <a href={"#skill"} >
+
+    <li onClick={() => { setActive('about-me')}}  className={`cursor-pointer text-center md:text-inherit mr-1 md:mr-6 ${active==="about-me" ? "text-green" : ""}`}>
     Acerca de mi
-    </a>
     </li>
-    <li onClick={() => setActive("contact")} className={`text-center md:text-inherit mr-8 md:mr-28 ${active==="contact" ? "text-green" : ""}`}>
-    <a href={"#contact"} >
+
+   <li onClick={() => {contactRef.current.scrollIntoView();setActive('contact');}}  className={`cursor-pointer text-center md:text-inherit mr-8 md:mr-28 ${active==="contact" ? "text-green" : ""}`}>
     Contáctame
-    </a>
     </li>
+
 </ul>
     </div>
     <div id="skill" className="bg-white  flex flex-col md:flex-row ml-0 mr-0 md:ml-marginSkills md:mr-marginSkills items-center justify-center">
@@ -193,7 +193,37 @@ function AboutMe() {
       </div>
    </div>
    </div>
-    <ContactSocial/>
+   <div id="contact" ref={contactRef} className="bg-white flex flex-col items-center justify-center pt-20">
+        <h2 className="font-raleway text-x35 text-black font-bold">Contáctame</h2>
+        <div className="flex flex-row">
+          <div className="bg-gray-light hover:bg-secondary cursor-pointer mr-1 md:mr-5 w-16 h-16 rounded-full flex items-center justify-center">
+          <Link to={{ pathname: "https://github.com/crije" }} target="_blank" >
+          <img src={contactGithub} alt="logo de github"/>
+          </Link>
+          </div>
+          <div className="bg-gray-light hover:bg-secondary cursor-pointer mr-1 md:mr-5 w-16 h-16 rounded-full flex items-center justify-center">
+          <a href="mailto:crije_22@hotmail.com">
+          <img src={contactMail} alt="un sobrecito de correo"/>
+          </a>
+          </div>
+          <div className="bg-gray-light hover:bg-secondary cursor-pointer mr-1 md:mr-5 w-16 h-16 rounded-full flex items-center justify-center">
+          <Link to={{ pathname: "https://github.com/crije" }} target="_blank" >
+          <img src={contactTwitter} alt="logo de twitter"/>
+          </Link>
+          </div>
+          <div className="bg-gray-light hover:bg-secondary cursor-pointer mr-1 md:mr-5 w-16 h-16 rounded-full flex items-center justify-center">
+          <Link to={{ pathname: "https://github.com/crije" }} target="_blank" >
+          <img src={contactFacebook} alt="logo de facebook"/>
+          </Link>
+          </div>
+          <div className="bg-gray-light hover:bg-secondary cursor-pointer mr-1 md:mr-5 w-16 h-16 rounded-full flex items-center justify-center">
+          <Link to={{ pathname: "https://github.com/crije" }} target="_blank" >
+          <img src={contactLinkedin} alt="logo de linkedin"/>
+          </Link>
+          </div>
+        </div>
+        <p className="font-roboto pt-20 text-lg text-gray-light font-bold mr-8 ml-8 md:mr-0 md:ml-0 pb-24">El código que haga hoy sera mejor que de ayer.</p>
+      </div>
     <Footer/>
     </>
   );
