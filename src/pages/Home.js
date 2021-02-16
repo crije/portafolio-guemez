@@ -84,7 +84,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link to={"/portfolio/project/trolley"}>
+     <Link to={"/project/trolley"}>
      <div className="bg-company-trolley bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <img src={logoTrolley}  alt="logo de trolley"/>
