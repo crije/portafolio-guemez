@@ -62,7 +62,7 @@ function PortFolio() {
         </ul>
     </div>
     <div id="portfolio-details" className="bg-white mt-28 flex flex-col md:flex-row  h-heightPortfolioDetailsMobil md:h-heightPortfolioDetails ml-4 mr-4 md:ml-32 md:mr-32">
-      <div className={style}>
+      <div className={project.heroBackground}>
 
       </div>
       <div className="w-portFolioDescriptionWidth h-portFolioDescriptionHeight ml-0 md:ml-margin-portfolio">
