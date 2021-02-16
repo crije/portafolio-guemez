@@ -1,5 +1,5 @@
-import firebase from "firebase";
-
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyBbU5YVivpm2nPjKdEmNN5Cv8kVHMipZdM",
     authDomain: "portafolio-a1fef.firebaseapp.com",

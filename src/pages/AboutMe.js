@@ -51,7 +51,7 @@ function AboutMe() {
     </div>
     <ul id="links-nav" className="absolute bottom-0 right-0 mb-6 list-none flex content-end justify-around h-14 items-center font-raleway font-bold text-base text-white">
     <li className="text-center md:text-inherit ml-8 md:ml-0 md:mr-6 ">
-    <Link to={{ pathname: "/" }} >
+    <Link to={{ pathname: "/portfolio" }} >
     Mi portafolio
     </Link>
     </li>

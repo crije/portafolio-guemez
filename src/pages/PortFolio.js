@@ -4,26 +4,32 @@ import { useParams} from "react-router";
 import { useEffect, useState } from "react";
 import {db} from "../firebase-config";
 import Loading from "./Loading";
+import NotFound from "./NotFound";
 function PortFolio() {
    let { company } = useParams();
    const [project, setProject] = useState([]);
    const [mounted, setMounted] = useState(true);
-   useEffect(() => {
-      window.scrollTo(0, 0)
-      db.collection("projects").where("id", "==", company).get()
-      .then(response => {
-        if(mounted) {
-          setProject(response.docs[0].data());
-          setMounted(false)
+   const [fireIsUndefined, setFireIsUndefined] = useState(false);
+    useEffect(() => {
+        if(company!==undefined){
+          window.scrollTo(0, 0)
+          db.collection("projects").where("id", "==", company).get()
+          .then(response => {
+            if(mounted) {
+              setProject(response.docs[0].data());
+              setMounted(false)
+            }
+          })
+          .catch(error => {
+            setMounted(false)
+          });
+        } else {
+          setFireIsUndefined(true)
         }
-      })
-      .catch(error => {
-        console.log(error)
-        setMounted(false)
-      });
     }, [])
-    const technologies = project.technologies ?? [];
+    if (fireIsUndefined) return <NotFound/>
     if (mounted) return <Loading/>
+    const technologies = project.technologies ?? [];
   return (
     <>
     <Header/>
@@ -44,7 +50,7 @@ function PortFolio() {
       )}
       </div>
         <Link to={{ pathname: project.url }} target="_blank">
-        <button className="bg-primary mt-8 w-40 rounded-md font-raleway font-bold text-tiny h-14 uppercase text-white">Visitar Sitio</button>
+        <button disabled={company==='mexicana'? true : false} className="bg-primary mt-8 w-40 rounded-md font-raleway font-bold text-tiny h-14 uppercase text-white">Visitar Sitio</button>
         </Link>
       </div>
     </div>

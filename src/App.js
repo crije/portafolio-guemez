@@ -4,16 +4,16 @@ function App() {
   return (
     <Router>
      <Switch>
-      <Route exact path="/">
+      <Route exact path="/portfolio/">
         <Home/>
       </Route>
-      <Route exact path="/about-me">
+      <Route exact path="/portfolio/about-me">
         <AboutMe/>
       </Route>
-      <Route exact path="/portfolio/:company?">
+      <Route exact path="/portfolio/project/:company?">
         <PortFolio/>
       </Route>
-      <Route component={NotFound} />
+      <Route component={NotFound}/>
       </Switch>
   </Router>
   );

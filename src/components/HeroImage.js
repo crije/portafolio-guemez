@@ -32,12 +32,12 @@ function HeroImage(props) {
             </h1>
            </div>
            <ul id="links-nav" className="list-none flex content-end justify-around sm:justify-end h-14 items-center font-raleway font-bold text-base text-white">
+           <Link to={"/portfolio/"}>
             <li className="mr-0 md:mr-14">
-            <a href={"#portfolio"}>
             Mi portafolio
-            </a>
             </li>
-            <Link to={"/about-me"}>
+            </Link>
+            <Link to={"/portfolio/about-me"}>
             <li className="mr-0 md:mr-14">
             Acerca de mi
             </li>
@@ -58,7 +58,7 @@ function HeroImage(props) {
             Mi portafolio
             </a>
             </li>
-            <Link to={"/about-me"}>
+            <Link to={"/portfolio/about-me"}>
             <li className="md:mr-14">
             Acerca de mi
             </li>

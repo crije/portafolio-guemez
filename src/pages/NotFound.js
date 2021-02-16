@@ -12,7 +12,7 @@ function NotFound() {
   <div className=" py-2 px-5 rounded-lg text-xl flex items-center flex-col text-center text-white font-roboto font-bold">
   <img src={notFound} className="w-4/5 md:w-1/2" alt="escuadrón especial de búsqueda de rutas perdidas"/>
   No conseguí encontrar la ruta que especificaste pero quizás ellos si puedan
-  <Link to={"/"}>
+  <Link to={"/portfolio"}>
         <button className="bg-secondary mt-8 w-40 rounded-md font-raleway font-bold text-tiny h-14 uppercase text-black">Regresar</button>
         </Link>
   </div>

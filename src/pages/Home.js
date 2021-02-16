@@ -18,7 +18,7 @@ function Home() {
        </div>
       </div>
       <div className="grid gap-2 grid-cols-1 md:grid-cols-2 ml-4 mr-4 md:ml-portfolioSpace md:mr-portfolioSpace">
-     <Link to={"/portfolio/wow"}>
+     <Link to={"/portfolio/project/wow"}>
      <div className="bg-company-wow bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 cursor-pointer relative flex flex-col content-center justify-center items-center v rounded-xl  h-cardHeightPortfolio bg-opacity-60">
             <img src={logoWow} alt="logo de wow excursions"/>
@@ -29,7 +29,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link to={"/portfolio/wildtours"}>
+     <Link to={"/portfolio/project/wildtours"}>
      <div className="bg-company-wild bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <img src={logoWild} alt="logo de wildtours"/>
@@ -40,7 +40,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link  to={"/portfolio/playamia"}>
+     <Link  to={"/portfolio/project/playamia"}>
      <div className="bg-company-playamia bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <img src={logoPm}  alt="logo de Playamia"/>
@@ -52,7 +52,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link to={"/portfolio/trolley"}>
+     <Link to={"/portfolio/project/trolley"}>
      <div className="bg-company-trolley bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <img src={logoTrolley}  alt="logo de trolley"/>
@@ -64,7 +64,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link to={"/portfolio/mexicana"}>
+     <Link to={"/portfolio/project/mexicana"}>
      <div className="bg-company-mexicana bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <div className="absolute bottom-6 left-6">
