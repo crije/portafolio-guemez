@@ -34,16 +34,26 @@ function PortFolio() {
     if (fireIsUndefined) return <NotFound/>
     if (mounted) return <Loading/>
     const technologies = project.technologies ?? [];
-    let style='';
+    let heroBackground='';
+    let detailBackground='';
     if(company==='wow'){
-      style='bg-portfolio-detail-wow w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
+      heroBackground='bg-portfolio-hero-wow bg-cover flex flex-cols pt-16 md:pt-0 md:h-detailHeight flex-col place-items-center place-content-center'
+      detailBackground='bg-portfolio-detail-wow w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
+    } else if(company==='wildtours'){
+      detailBackground='bg-portfolio-detail-wildtours w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
+    } else if(company==='playamia'){
+      detailBackground='bg-portfolio-detail-playamia w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
+    }else if(company==='trolley'){
+      detailBackground='bg-portfolio-detail-trolley w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
+    }else if(company==='mexicana'){
+      detailBackground='bg-portfolio-detail-mexicana w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
     }
-    
+
   return (
     <>
     <Header/>
     <div className={"bg-primary sm:ml-0 sm:mr-0 sm:pl-0 sm:pr-0 md:pl-0 md:pr-0"}>
-    <div className={`bg-portfolio-hero-${project.id} bg-cover flex flex-cols pt-16 md:pt-0 md:h-detailHeight flex-col place-items-center place-content-center`} >
+    <div className={`bg-portfolio-hero-${company} bg-cover flex flex-cols pt-16 md:pt-0 md:h-detailHeight flex-col place-items-center place-content-center`} >
             <h1 className="font-raleway text-center text-2xl text-white">
             <div className="font-bold">{project.title_bold}</div>
             <div className="font-extralight">{project.title_extra_light}</div>
@@ -66,7 +76,7 @@ function PortFolio() {
         </ul>
     </div>
     <div id="portfolio-details" className="bg-white mt-28 flex flex-col md:flex-row  h-heightPortfolioDetailsMobil md:h-heightPortfolioDetails ml-4 mr-4 md:ml-32 md:mr-32">
-      <div className={style}>
+      <div className={detailBackground}>
 
       </div>
       <div className="w-portFolioDescriptionWidth h-portFolioDescriptionHeight ml-0 md:ml-margin-portfolio">
