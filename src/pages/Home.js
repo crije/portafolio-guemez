@@ -61,7 +61,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link to={"/project/wildtours"}>
+     <Link to={"/portfolio/wildtours"}>
      <div className="bg-company-wild bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <img src={logoWild} alt="logo de wildtours"/>
@@ -72,7 +72,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link  to={"/project/playamia"}>
+     <Link  to={"/portfolio/playamia"}>
      <div className="bg-company-playamia bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <img src={logoPm}  alt="logo de Playamia"/>
@@ -84,7 +84,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link to={"/project/trolley"}>
+     <Link to={"/portfolio/trolley"}>
      <div className="bg-company-trolley bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <img src={logoTrolley}  alt="logo de trolley"/>
@@ -96,7 +96,7 @@ function Home() {
          </div>
         </div>
      </Link>
-     <Link to={"/project/mexicana"}>
+     <Link to={"/portfolio/mexicana"}>
      <div className="bg-company-mexicana bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 relative flex flex-col content-center justify-center items-center bg-opacity-60 rounded-xl h-cardHeightPortfolio">
             <div className="absolute bottom-6 left-6">

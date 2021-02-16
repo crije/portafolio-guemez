@@ -68,7 +68,7 @@ module.exports = {
         'company-logo-wild': "url('/src/assets/images/logos/logo-wild.png')",
         'about-me-header': "url('/src/assets/images/aboutMe/header-about-me.png')",
         'portfolio-hero-wow': "url('/src/assets/images/portfolio/wow/background.png')",
-        'portfolio-hero-mexicana': "url('/src/assets/images/aboutMe/header-about-me.png')",
+        'portfolio-hero-mexicana': "url('/src/assets/images/portfolio/mexicana/background.png')",
         'portfolio-hero-playamia': "url('/src/assets/images/portfolio/playamia/background.png')",
         'portfolio-hero-trolley': "url('/src/assets/images/portfolio/trolley/background.png')",
         'portfolio-hero-wildtours': "url('/src/assets/images/portfolio/wildtours/background.png')",
