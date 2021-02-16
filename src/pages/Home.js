@@ -51,7 +51,7 @@ function Home() {
       </div>
       <div className="grid gap-2 grid-cols-1 md:grid-cols-2 ml-4 mr-4 md:ml-portfolioSpace md:mr-portfolioSpace">
      <Link to={"/project/wow"}>
-     <div className="bg-company-wow bg-cover rounded-xl h-cardHeightPortfolio">
+     <div className="bg-portfolio-hero-wow bg-cover rounded-xl h-cardHeightPortfolio">
          <div  className="bg-gray hover:bg-purple hover:bg-opacity-60 cursor-pointer relative flex flex-col content-center justify-center items-center v rounded-xl  h-cardHeightPortfolio bg-opacity-60">
             <img src={logoWow} alt="logo de wow excursions"/>
             <div className="absolute bottom-6 left-6">
