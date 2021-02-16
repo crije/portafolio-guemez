@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Footer() {
   return (
     <div className="bg-primary h-96 flex flex-col items-center justify-center">
-        <p  className="font-raleway text-base font-light text-white pt-11 pb-16">¡Embarquémonos en nuevos proyectos juntos!</p>
+        <p  className="font-raleway text-base text-center font-light text-white pt-11 pb-16">¡Embarquémonos en nuevos proyectos juntos!</p>
         <h2 className="font-raleway text-x35 text-white">
           <span className='font-bold'>Front End</span>
           <span className="font-extralight"> Developer</span>

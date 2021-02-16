@@ -11,17 +11,20 @@ function Home() {
   return (
     <>
     <Header/>
-    <div className="bg-primary sm:ml-0 sm:mr-0 sm:pl-0 sm:pr-0 md:pl-marginLeft">
-    <div className="bg-hero-image pt-16 md:pt-0 bg-cover md:bg-auto  pl-28 pr-28  md:pl-28 md:pr-28 md:w-hero-image-width md:h-hero-image-height flex flex-col place-items-center place-content-center" >
+    <div className="bg-primary ml-0 mr-0 md:ml-0 md:mr-0 sm:pl-0 sm:pr-0 flex flex-col">
+    <div className="bg-hero-image pt-16 md:pt-0 bg-cover md:bg-auto ml-0 pl-28 pr-28 self-auto md:self-center  md:pl-28 md:pr-28 md:w-hero-image-width md:h-hero-image-height flex flex-col place-items-center place-content-center" >
             <img src={webProgramming} alt="alt web programming"/>
-            <h1 className="font-raleway text-2xl text-white">
+            <div className={"mt-6 mb-6 md:mt-0 md:mb-0 leading-12 md:leading-normal"}>
+            <h1 className="font-raleway text-2xl text-center text-white">
             <span className="font-bold">Front End</span>
             <span className="font-extralight"> Developer</span>
             </h1>
-            <p className="font-roboto text-x4 text-green">
+            <p className="font-roboto text-x4 text-center text-green">
             <span className="font-thin text-center">Cristhian</span>
             <span className="font-bold text-center"> Guemez</span>
             </p>
+            </div>
+
            </div>
            <ul id="links-nav" className="list-none flex content-end justify-around sm:justify-end h-14 items-center font-raleway font-bold text-base text-white">
             <li className={`md:mr-14 ${active==="portfolio" ? "text-green" : ""}` }>

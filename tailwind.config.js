@@ -25,6 +25,9 @@ module.exports = {
         'raleway': ['raleway'],
         'roboto': ['roboto'],
        },
+       lineHeight: {
+        '12': '3rem',
+       },
        textColor: {
         'gray': '#545454',
         'black':'#282828',

@@ -11,7 +11,7 @@ function AboutMe() {
     }, [])
   return (
     <>
-    <div className="h-heightHeaderAboutMe relative items-center justify-items-center justify-center flex flex-col bg-primary bg-about-me-header bg-right-top">
+    <div className="h-heightHeaderAboutMe relative items-center justify-items-center justify-center flex flex-col bg-no-repeat bg-primary bg-about-me-header bg-right-top">
     <ul id="header-social" className="absolute left-0 top-0 list-none h-7 flex flex-row place-items-center h-16 pl-32 md:pl-28">
         <li className="mr-3">
         <Link to={{ pathname: "https://github.com/crije" }} target="_blank" >
@@ -40,6 +40,7 @@ function AboutMe() {
         </li>
     </ul>
     <div className="flex flex-col items-center self-center">
+    <div className={"mt-6 mb-6 md:mt-0 md:mb-0 leading-12 md:leading-normal"}>
     <h1 className="font-raleway text-2xl text-center md:text-inherit text-white">
       <span className='font-bold'>¡Hola!</span>
       <span className="font-bold"> Soy Cristhian</span>
@@ -50,14 +51,16 @@ function AboutMe() {
       <span className="font-thin text-center"> Developer</span>
       </h2>
     </div>
+
+    </div>
     <ul id="links-nav" className="absolute bottom-0 right-0 mb-6 list-none flex content-end justify-around h-14 items-center font-raleway font-bold text-base text-white">
-    <li className="text-center md:text-inherit ml-8 md:ml-0 md:mr-6 ">
+    <li className="text-center md:text-inherit ml-8  md:ml-0 md:mr-6 ">
     <Link to={{ pathname: "/" }} >
     Mi portafolio
     </Link>
     </li>
 
-    <li onClick={() => { setActive('about-me')}}  className={`cursor-pointer text-center md:text-inherit mr-1 md:mr-6 ${active==="about-me" ? "text-green" : ""}`}>
+    <li onClick={() => { setActive('about-me')}}  className={`cursor-pointer text-center md:text-inherit ml-8 mr-8 md:mr-6 md:ml-0 ${active==="about-me" ? "text-green" : ""}`}>
     Acerca de mi
     </li>
 
@@ -172,7 +175,7 @@ function AboutMe() {
       </div>
       </div>
       <div className="bg-gray-light w-lineWeight md:w-80 h-7 rounded-full mb-2">
-      <div className="bg-primary text-white font-raleway flex items-center font-bold text-tiny-up w-7/12 h-7 rounded-full">
+      <div className="bg-primary text-white font-raleway flex items-center font-bold text-tiny-up w-8/12 h-7 rounded-full">
          <p className="ml-3">Material UI</p>
       </div>
       </div>
