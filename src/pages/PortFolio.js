@@ -38,7 +38,7 @@ function PortFolio() {
     <>
     <Header/>
     <div className={"bg-primary sm:ml-0 sm:mr-0 sm:pl-0 sm:pr-0 md:pl-0 md:pr-0"}>
-    <div className={`bg-portfolio-hero-trolley bg-cover flex flex-cols pt-16 md:pt-0 md:h-detailHeight flex-col place-items-center place-content-center`} >
+    <div className={project.heroBackground} >
             <h1 className="font-raleway text-center text-2xl text-white">
             <div className="font-bold">{project.title_bold}</div>
             <div className="font-extralight">{project.title_extra_light}</div>
