@@ -34,11 +34,12 @@ function PortFolio() {
     if (fireIsUndefined) return <NotFound/>
     if (mounted) return <Loading/>
     const technologies = project.technologies ?? [];
+    var style='bg-portfolio-detail-wow w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover'
   return (
     <>
     <Header/>
     <div className={"bg-primary sm:ml-0 sm:mr-0 sm:pl-0 sm:pr-0 md:pl-0 md:pr-0"}>
-    <div className={project.heroBackground} >
+    <div className={`bg-portfolio-hero-${project.id} bg-cover flex flex-cols pt-16 md:pt-0 md:h-detailHeight flex-col place-items-center place-content-center`} >
             <h1 className="font-raleway text-center text-2xl text-white">
             <div className="font-bold">{project.title_bold}</div>
             <div className="font-extralight">{project.title_extra_light}</div>
@@ -61,7 +62,7 @@ function PortFolio() {
         </ul>
     </div>
     <div id="portfolio-details" className="bg-white mt-28 flex flex-col md:flex-row  h-heightPortfolioDetailsMobil md:h-heightPortfolioDetails ml-4 mr-4 md:ml-32 md:mr-32">
-      <div className={`bg-portfolio-detail-${project.id} w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover`}>
+      <div className={style}>
 
       </div>
       <div className="w-portFolioDescriptionWidth h-portFolioDescriptionHeight ml-0 md:ml-margin-portfolio">
