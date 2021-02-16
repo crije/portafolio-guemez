@@ -34,21 +34,6 @@ function PortFolio() {
     if (fireIsUndefined) return <NotFound/>
     if (mounted) return <Loading/>
     const technologies = project.technologies ?? [];
-    let heroBackground='';
-    let detailBackground='';
-    if(company==='wow'){
-      heroBackground='bg-portfolio-hero-wow bg-cover flex flex-cols pt-16 md:pt-0 md:h-detailHeight flex-col place-items-center place-content-center'
-      detailBackground='bg-portfolio-detail-wow w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
-    } else if(company==='wildtours'){
-      detailBackground='bg-portfolio-detail-wildtours w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
-    } else if(company==='playamia'){
-      detailBackground='bg-portfolio-detail-playamia w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
-    }else if(company==='trolley'){
-      detailBackground='bg-portfolio-detail-trolley w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
-    }else if(company==='mexicana'){
-      detailBackground='bg-portfolio-detail-mexicana w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover';
-    }
-
   return (
     <>
     <Header/>
@@ -76,7 +61,7 @@ function PortFolio() {
         </ul>
     </div>
     <div id="portfolio-details" className="bg-white mt-28 flex flex-col md:flex-row  h-heightPortfolioDetailsMobil md:h-heightPortfolioDetails ml-4 mr-4 md:ml-32 md:mr-32">
-      <div className={detailBackground}>
+      <div className={`bg-portfolio-detail-${company} w-80 md:w-portfolioBackgroundDetail self-center md:self-auto h-portfolioBackgroundDetailHeight bg-auto bg-no-repeat md:bg-cover`}>
 
       </div>
       <div className="w-portFolioDescriptionWidth h-portFolioDescriptionHeight ml-0 md:ml-margin-portfolio">
@@ -85,9 +70,45 @@ function PortFolio() {
       <p className="mb-8 font-roboto text-base text-black font-bold">Tecnologías implementadas:</p>
       <div className="grid grid-cols-3 gap-4">
       {technologies.map((technology,i) =>
-         <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
-            <div className={`bg-technology-${technology} w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
-         </div>
+         {
+            if(technology==='html'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-html w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            } else if (technology==='css'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-css w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            } else if (technology==='boostrap'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-boostrap w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            } else if (technology==='jquery'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-jquery w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            } else if (technology==='php'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-php w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            } else if (technology==='react'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-react w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            } else if (technology==='laravel'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-laravel w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            } else if (technology==='ionic'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-ionic w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            } else if (technology==='typescript'){
+              return <div key={`tecno${i}`} className='w-tecnologyWidth h-tecnologyWidth bg-gray-light rounded-md'>
+                      <div className={`bg-technology-typescript w-tecnologyWidth h-tecnologyWidth bg-no-repeat bg-center`}></div>
+                     </div>
+            }
+         }
       )}
       </div>
         <Link to={{ pathname: project.url }} target="_blank">
